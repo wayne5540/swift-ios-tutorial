@@ -14,6 +14,7 @@
 		B048FE451C3E61AE000E61FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B048FE431C3E61AE000E61FC /* Main.storyboard */; };
 		B048FE471C3E61AE000E61FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B048FE461C3E61AE000E61FC /* Assets.xcassets */; };
 		B048FE4A1C3E61AE000E61FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B048FE481C3E61AE000E61FC /* LaunchScreen.storyboard */; };
+		B0651EE41C3E67C10091B32B /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0651EE31C3E67C10091B32B /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		B048FE461C3E61AE000E61FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B048FE491C3E61AE000E61FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B048FE4B1C3E61AE000E61FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0651EE31C3E67C10091B32B /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		D3CEB290FBD65204D6292089 /* Pods_TodoExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodoExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -87,6 +89,7 @@
 				B048FE461C3E61AE000E61FC /* Assets.xcassets */,
 				B048FE481C3E61AE000E61FC /* LaunchScreen.storyboard */,
 				B048FE4B1C3E61AE000E61FC /* Info.plist */,
+				B0651EE31C3E67C10091B32B /* Task.swift */,
 			);
 			path = TodoExample;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0651EE41C3E67C10091B32B /* Task.swift in Sources */,
 				B048FE421C3E61AE000E61FC /* SecondViewController.swift in Sources */,
 				B048FE3E1C3E61AE000E61FC /* AppDelegate.swift in Sources */,
 				B048FE401C3E61AE000E61FC /* FirstViewController.swift in Sources */,
