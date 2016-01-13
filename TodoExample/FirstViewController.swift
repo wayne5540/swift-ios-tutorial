@@ -87,6 +87,35 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         presentViewController(alertController, animated: true, completion: nil)
     }
     
+    func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
+        let doneAction = UITableViewRowAction(style: .Normal, title: "Mark as completed") { action, index in
+            let task = self.tasks[indexPath.row]
+            
+            try! self.realm.write {
+                task.isCompleted = true
+            }
+            
+            self.loadTasks()
+            self.tableView.reloadData()
+        }
+        doneAction.backgroundColor = UIColor.greenColor()
+        
+        let deleteAction = UITableViewRowAction(style: .Default, title: "Delete") { action, index in
+            let task = self.tasks[indexPath.row]
+            
+            
+            try! self.realm.write {
+                self.realm.delete(task)
+            }
+            
+            self.loadTasks()
+            self.tableView.reloadData()
+        }
+        
+        return [deleteAction, doneAction]
+    }
+    
+    
     func loadTasks() {
         tasks = realm.objects(Task).filter("isCompleted == 0")
     }
