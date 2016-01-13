@@ -26,6 +26,11 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         loadTasks()
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        loadTasks()
+        tableView.reloadData()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
